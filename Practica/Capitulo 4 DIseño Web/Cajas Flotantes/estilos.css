@@ -1,0 +1,43 @@
+#cajapadre{
+    width: 600px;
+    border: 1px dashed;
+    z-index: -2;
+}
+
+#caja1{
+    position: absolute;
+    top: 25px;
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #003844;
+    z-index: -1;
+}
+
+#caja2{
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #006C67;
+}
+
+#caja3{
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #F194B4;
+}
+#caja4{
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background-color: #FFB100;
+}
+
+.restaurar{
+    clear: both;
+}

@@ -1,0 +1,71 @@
+@font-face {
+    font-family:"MiNuevaLetra";
+    src: url(../Propiedades/dogica/TTF/dogicabold.ttf);
+}
+
+@font-face {
+    font-family:"Dogica-Normal";
+    src: url(../Propiedades/dogica/TTF/dogica.ttf);
+}
+body{
+    background-color: powderblue;
+
+      
+}
+header{
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    border:2px solid;
+    animation: mianimacion 1s ease-in-out 0s infinite normal none;   
+}
+
+@keyframes mianimacion{
+    20%{
+        background: #2d5167;
+    }
+
+    35%{
+        transform: scale(0.5);
+        background: #96e839;
+    }
+    50%{
+        transform: scale(1.5);
+        background-color: #96e839;
+    }
+    65%{
+        transform: scale(0.5);
+        background-color:#96e839;
+    }
+    100%{
+        background: #2d5167;
+    }
+}
+
+#titulo{
+    font: bold 25px MiNuevaLetra,Verdana,sans-serif;
+    color: #96e839;
+    text-shadow: #d831c1 3px 3px 5px;
+
+}
+
+#descripcion{
+    font: normal 14px Dogica-Normal,Verdana,sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    line-height: 40px;
+    /*color:rgb(84,62,70);*/
+    color:#2d5167;
+    width: 900px;
+    height: 500px;
+    overflow-wrap:break-word;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+

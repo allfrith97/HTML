@@ -1,0 +1,98 @@
+@font-face {
+    font-family:"MiNuevaLetra";
+    src: url(../Propiedades/dogica/TTF/dogicabold.ttf);
+}
+
+@font-face {
+    font-family:"Dogica-Normal";
+    src: url(../Propiedades/dogica/TTF/dogica.ttf);
+}
+body{
+    background: url(../../../img/ladrillos.jpg);
+}
+header{
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    /*
+    background-color: #34495e;
+    */
+
+    /*
+    background-image: url(../../../img/tira.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    */
+    /*
+    background:#34495e url(../../../img/tira.jpg) repeat-y right;
+    */
+
+    /*border-style: solid;
+    border-width: 3px;
+    */
+    border:2px solid;
+
+    /*border-radius: 20px;*/
+
+    /*Demarcar un elemento con outline
+    outline-width: 2px;
+    outline-color:#f1948a;
+    outline-style: dashed;
+    outline-offset: 10px;
+
+    outline: 2px dashed #f23992;
+    outline-offset: 15px;*/
+
+    /*Bordes con imagenes
+    border-image-source:url(../../../img/diamante.png);
+    border-image-slice:100;
+    border-image-repeat: round;
+
+
+    box-shadow: #96e839 5px 5px 20px;
+    */
+
+    
+
+    /*
+    background: -webkit-linear-gradient(top,transparent,#8e44ad);
+    background: -webkit-linear-gradient(top, transparent,#8e44ad 60%,#96e839 97%);
+    */
+    background: -webkit-radial-gradient(center,ellipse,transparent,#8e44ad 80%);
+    filter: opacity(.2);
+    
+    
+    
+    
+}
+
+#titulo{
+    font: bold 25px MiNuevaLetra,Verdana,sans-serif;
+    color: #96e839;
+    text-shadow: #d831c1 3px 3px 5px;
+
+}
+
+#descripcion{
+    font: normal 14px Dogica-Normal,Verdana,sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    line-height: 40px;
+    /*color:rgb(84,62,70);*/
+    color:#fff;
+    width: 900px;
+    height: 500px;
+    overflow-wrap:break-word;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img {
+    vertical-align: sub; /* También puede ser top, bottom, etc. */
+  }

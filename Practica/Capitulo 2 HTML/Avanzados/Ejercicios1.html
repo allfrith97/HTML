@@ -1,0 +1,150 @@
+<!--Crea una página de un blog que contenga:
+
+Un artículo con su título, autor, fecha de publicación y contenido dividido en secciones.
+
+Un área de comentarios al final del artículo donde los usuarios puedan dejar su nombre, correo electrónico y comentario.
+
+Un sistema de reacciones (me gusta, me encanta, etc.) usando íconos.
+
+La página debe usar <article>, <section>, <header>, <footer>, <form>, <input>, <textarea>, <button>, <nav>, <aside>, y <details>.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Informatica</title>
+    <link rel="icon" href="../../../img/sasuke.jpg" type="image/jpg" sizes="16x16">
+</head>
+<body>
+    <!--Cabecera de a pagina-->
+    <header>
+        <section id="titulo">
+            <h1>¿Qué tiene que saber una persona experta en desarrollo web?</h1>
+            <p><em>Cesar Pablo Corcoles Briongos, Alba Pueyo i Busquets</em></p>
+            <p><strong>Publicado:</strong> 4 de abril de 2025</p>
+        </section>
+    </header>
+    <!--Barra de Navegacion-->
+    <nav>
+        <a href="Ejercicios1.html">Inicio</a>|
+        <a href="#noticias">Lo mas relevante</a>|
+        <a href="#contacto">Contacto</a>|
+    </nav>
+    <!--Este es el cuerpo del documento-->
+    <main>
+        <!--Contenedor informacion principal-->
+        <div id="general">
+            <section id="introduccion">
+                <header>
+                    <h2>Introduccion</h2>
+                </header>
+                <article>
+                <h3>El desarrollo web</h3>
+                <p>Hoy en día la profesión de desarrollador/a web es clave para cualquier organización. Cada vez hay más empresas que demandan personas expertas en desarrollo web, con conocimientos profundos de marcado y maquetación, dominio de las herramientas que se utilizan en entornos de producción y conocimientos de front-end y back-end. Según datos de la consultora RecluIT, los perfiles de desarrolladores/as de aplicaciones móviles y sitios web son algunos de los más demandados en 2021. 
+
+                Más allá de lo apasionante que puede resultar este trabajo, para dedicarse profesionalmente al desarrollo web e incorporarse a una industria en continuo crecimiento es necesario formarse (por ejemplo, con un máster de desarrollo web) y seguir aprendiendo durante toda la carrera profesional.
+                </p>     
+                </article>
+            </section>
+
+            <section id="info-desarrollador">
+                <header><h2>Pero ¿qué hace un desarrollador o desarrolladora web?</h2></header>                    
+                <article>
+                <h3>...Tema en desarrollo</h3>
+                <p>El desarrollo web hace referencia a todas aquellas tareas relacionadas con el funcionamiento de la web: desde la construcción y creación hasta el mantenimiento de sitios web para Internet o una intranet. En su día a día, pues, las personas expertas en desarrollo web se encargan de crear sitios web y de implementar las funcionalidades y características de una página o app móvil para que ésta cumpla con los requisitos deseados. 
+
+                Para hacerlo, utilizan varios lenguajes de programación y tecnologías de software del lado del cliente (front-end) y del servidor (back-end) que involucran una combinación de procesos de base de datos con el uso de un navegador web con el objetivo de realizar determinadas tareas o mostrar información. No obstante, más allá de estas responsabilidades, los profesionales del desarrollo web también llevan a cabo otras funciones, como el diseño web, la publicación web, la programación web o la gestión de bases de datos. 
+
+                Aun así, en muchas ocasiones se confunde el desarrollo web con el diseño web. Mientras que el desarrollador/a tiene una formación técnica (informática, ingeniería, multimedia), el diseñador/a web tiene una formación relacionada con el campo visual y artístico, pero también con los campos del diseño de interacción y experiencia de usuario (UX). Sin embargo, a pesar de ser disciplinas distintas, se trata de dos perfiles profesionales complementarios y necesarios para  conseguir una página web optimizada. 
+
+                Las personas expertas en desarrollo web pueden trabajar en pequeñas y medianas empresas, grandes compañías o por cuenta propia como autónomos. Actualmente las principales salidas profesionales del sector son las de especialista o programador front-end, full stack developer, programador HTML5 y programador back-end, y se habla cada vez más de perfiles como UX engineer. En cuanto a las competencias que debe dominar este perfil profesional, destacan la capacidad de resolver problemas, el pensamiento computacional, dominio de los lenguajes de programación y el diseño de sistemas.
+                </p>
+                </article>
+            </section>
+            <section id="conclusion">
+                <header><h2>Herramientas:</h2></header>
+                <article>
+                <h3>HTML</h3>
+                La primera tecnología de desarrollo web que debe aprenderse es el HTML. Se trata del lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código para la definición de contenido de una página web, como texto, imágenes, videos, entre otros. 
+
+                <h3>CSS</h3>
+                El CSS es un lenguaje de diseño para definir y crear la presentación de un documento estructurado escrito en HTML o, dicho de otra manera, es el lenguaje que permite aplicar un diseño a nuestro contenido. Se trata, pues, de la característica que conquista a los clientes y que, en consecuencia, genera beneficios. Y es que muchas veces no importa qué tecnología esté detrás de nuestra aplicación web si esta no tiene un buen aspecto visual, ya que un cliente no pagará por un producto que no encuentre visualmente atractivo. 
+
+                <h3>JavaScript</h3>
+                JavaScript es el lenguaje de programación del presente y el futuro de la web, ya que permite añadir características interactivas a un sitio web. JavaScript nació con la intención de convertirse en un lenguaje para añadir algo de interactividad a las páginas web de mediados de los noventa. Con el tiempo ha ido evolucionando hasta convertirse en uno de los lenguajes de programación más usados. Con este lenguaje se pueden crear aplicaciones de escritorio, móviles, back-end y front-end. 
+
+                <h3>Bases de datos</h3> 
+                Para dedicarse profesionalmente al desarrollo web también hay que entender cómo se almacenan los datos de los usuarios, ya que la información es el activo más valioso del software. La mayoría de las veces los datos se almacenan en bases de datos relacionales como, por ejemplo, MySQL. 
+
+                <h3>Lenguaje de servidor</h3> 
+                Un lenguaje del lado del servidor es aquel que se ejecuta en el servidor web, justo antes de que se envíe la página a través de Internet al cliente. Las páginas que se ejecutan en el servidor pueden realizar accesos a bases de datos, conexiones en red y otras tareas para crear la página final que verá el cliente. Además de permitir la interacción entre usuarios y servidores, el lenguaje de servidor también permite explotar todo el potencial de las bases de datos para generar aplicaciones web dinámicas. Algunos de los lenguajes más utilizados son PHP y Node.js. 
+
+                <h3>Frameworks</h3>
+                Los frameworks facilitan el trabajo de desarrollo porque permiten configurar fácilmente los conceptos fundamentales mencionados anteriormente. También ayudan al desarrollador/a a crear proyectos más sofisticados. Actualmente algunos de los frameworks más populares son Angular (JavaScript, en el lado del cliente) y Laravel (PHP, en el lado del servidor), aunque existe una miríada de ellos. Teniendo en cuenta que es muy probable que a lo largo de nuestra vida profesional trabajemos con varios frameworks, es muy importante entender bien cuál es su filosofía, además de entrar en los detalles de cada uno de ellos.
+
+                <h3>Diseño, interacción y experiencia de usuario </h3>
+                Ninguna aplicación o sitio web termina de funcionar si no tiene un diseño atractivo para el usuario, es usable y ofrece una buena experiencia de usuario (UX). Por ello, el máster de desarrollo web de la UOC incluye una asignatura de diseño de interfaces interactivas. El objetivo es que los graduados y graduadas puedan integrarse en equipos multidisciplinares para llevar a cabo todas las posibles tareas en el ámbito del desarrollo web. Y la UOC también ofrece un máster completo dedicado al tema, el máster universitario de Diseño de Interacción y Experiencia de Usuario (UX), para aquellas personas que quieran profundizar más en este perfil, imprescindible también para la creación de aplicaciones web.
+
+                Y es que, sin duda, el desarrollo web da para toda una vida de aprendizaje. ¿Empezamos? 
+                </article>
+            </section>
+            
+        </div>
+        <!--Contenedores Formularios-->
+        <div id="contenedor-formularios">
+            <div id="caja-comentarios">
+                <fieldset>
+                    <legend>Comentarios</legend>
+                    <form name="comentarios" method="get" action="respuestas.php">
+                        <p><label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" maxlength="25" placeholder="Ingresa nombre"></label></p>
+                        <p><label for="correo">Correo: <input type="email" name="correo" id="correo" placeholder="Correo Obligatorio"></label></p>
+                        <p><label for="comentarios">Comentarios</label></p><textarea name="comentarios" id="comentarios" cols="35" rows="6" placeholder="Ingresa comentario hasta 500 palabras" maxlength="500"></textarea> 
+                        <p><button type="submit">Enviar Comentario</button></p>      
+                    </form>
+                </fieldset>
+                
+            </div>
+            <!--Reacciones-->
+            <div id="caja-reacciones">
+                <fieldset>
+                    <legend>Reacciones</legend>
+                        <form name="reacciones" method="get" action="reacciones.php">
+                            <label><input type="radio" value="Me encanta" name="emoji"><img src="../Avanzados/img/encanta.png" width="25" alt="Archivo no encontrado">Me encanta</label>
+                            <label><input type="radio" value="Me gusta" name="emoji"><img src="../Avanzados/img/gusta.png" width="25" alt="Archivo no encontrado">Me gusta</label>
+                            <label><input type="radio" value="Me sorprende" name="emoji"><img src="../Avanzados/img/sorprendido.png" width="25" alt="Archivo no encontrado">Me sorprende</label>
+                            <label><input type="radio" value="Me divierte" name="emoji"><img src="../Avanzados/img/divierte.png" width="25" alt="Archivo no encontrado">Me divierte</label>
+                            <details>
+                                <summary> Mas Reacciones</summary>
+                                <label><input type="radio" value="Me enoja" name="emoji"><img src="../Avanzados/img/enojado.png" width="25" alt="Archivo no encontrado"> Enojado</label>
+                                <label><input type="radio" value="Me alegra" name="emoji"><img src="../Avanzados/img/feliz.png" width="25" alt="Archivo no encontrado">Me alegra</label>
+                                <label><input type="radio" value="Me entristece" name="emoji"><img src="../Avanzados/img/triste.png" width="25" alt="Archivo no encontrado">Me entristece</label>
+                                <label><input type="radio" value="Sin comentarios" name="emoji"><img src="../Avanzados/img/comentario.png" width="25" alt="Archivo no encontrado">Sin Comentarios</label>
+                            </details>
+                            <p><button type="submit">Enviar Reaccion</button></p>  
+                        </form>
+                    
+                </fieldset>
+                
+            </div>
+        </div>
+        <aside>
+            <h2>Recursos para aprender HTML</h2>
+            <p>Si quieres profundizar más en HTML, aquí tienes algunos enlaces útiles:</p>
+            <ul>
+              <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Guía de HTML en MDN</a></li>
+              <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">Tutorial de HTML en W3Schools</a></li>
+              <li><a href="https://htmlreference.io/" target="_blank" rel="noopener noreferrer">HTML Reference (guía visual)</a></li>
+              <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5" target="_blank" rel="noopener noreferrer">Curso básico de HTML en freeCodeCamp</a></li>
+              <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank" rel="noopener noreferrer">Curso interactivo de HTML en Codecademy</a></li>
+            </ul>
+          </aside>
+    </main>
+    <footer>
+        <h3>Autores</h3>
+        Cesar Pablo Corcoles Briongos
+        <br>Informática, Multimedia y Telecomunicación
+        <address>Puebla, Mexico</address>
+        <small>&copy;Derechos Reservados</small>        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*
+Ejemplo con :nth-child*/
+
+.mitexto:nth-child(1){
+    font-size: 20px;
+    background-color: #DAF7A6;
+}
+.mitexto:nth-child(2){
+    font-size: 20px;
+    background-color: #c39bd3;
+}
+.mitexto:nth-child(3){
+    font-size: 20px;
+    background-color: #DAF7A6;
+}
+.mitexto:nth-child(4){
+    font-size: 20px;
+    background-color: #c39bd3;
+}
+
+
+
+/*Ejemplo con firts:child*/
+
+.ejemplo2:first-child{
+    font-size: 30px;
+    background-color: #148f77;
+}
+
+/*Ejemplo con last:child*/
+
+.ejemplo3:last-child{
+    font-size: 30px;
+    background-color: #e74c3c;
+}
+
+
+/*Ejemplo con Odd (Indicie impar)*/
+.ejemplo4:nth-child(odd){
+    font-size: 20px;
+    background-color: #dc7633;
+}
+/*Ejemplo con Even (Indicie par)*/
+.ejemplo4:nth-child(even){
+    font-size: 20px;
+    background-color: #2980b9;
+}

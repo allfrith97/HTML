@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<style>
+    .zona-debug {
+      position: absolute;
+      border: 2px dashed red;
+      pointer-events: none; /* para que no bloquee el clic de <area> */
+    }
+  
+    .contenedor-imagen {
+      position: relative;
+      display: inline-block;
+    }
+  </style>
+
+<body>
+   
+      
+      <div class="contenedor-imagen">
+        <img src="tuimagen.jpg" usemap="#mapa" alt="Mapa interactivo" width="600" height="400">
+        <div class="zona-debug" style="top: 50px; left: 50px; width: 150px; height: 100px;"></div>
+      </div>
+      
+      <map name="mapa">
+        <area shape="circle" coords="50,50,200,150" href="https://ejemplo.com" alt="Zona 1">
+      </map>
+    
+</body>
+</html>

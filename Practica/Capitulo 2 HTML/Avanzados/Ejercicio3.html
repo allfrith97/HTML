@@ -1,0 +1,196 @@
+<!--Ejercicio 3: Página de Noticias con Artículos
+Desarrolla una página de noticias que muestre varias noticias en una lista:
+
+Cada noticia debe incluir un título, resumen, fecha de publicación y una imagen destacada.
+
+La página debe tener una barra de navegación para diferentes categorías (por ejemplo, "Deportes", "Cultura", "Tecnología").
+
+Cada categoría debe ser un enlace dentro de un <nav>, y los artículos deben estar dentro de <article> o <section>.
+
+Usa <header>, <footer>, <article>, <section>, <nav>, <figure>, <figcaption>, y <aside>.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+</head>
+<body>
+    <header id="contenedor-header" align="center">
+        <h1>Noticias de Konohagakure</h1>
+    </header>
+    <nav align="center">
+        <a href="#contenedor-header">Inicio</a>
+        <a href="#contenedor-deportes">Deportes</a>|
+        <a href="#contenedor-cultura">Cultura</a>|
+        <a href="#contenedor-tecnologia">Tecnología</a>|
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+
+        <section id="contenedor-noticias">
+            <h2>Ultimas noticias</h2>
+            <!--Seccion Deportes-->
+            <div class="contenedor-deportes">
+                <!--Titulo Seccion Deportes-->
+                <header>
+                    <h3>Deportes</h3>
+                </header>
+                <!--Articulo 1-Deporte-->
+                <article class="articulo-deporte" style="background-color: #FF5733;">
+                    <header>
+                        <h4>Noticia 1: Sasuke ¿el mejor delantero de konoha?</h4>
+                        <time dametime="2025-03-01">01 de marzo 2025</time>
+                    </header>
+                    <section>
+                        <figure>
+                            <img src="../../../img/sasuke-argentina.jpg" width="100" alt="Sasuke" >
+                            <figcaption>Sasuke en el partido de hoy</figcaption>
+                        </figure>
+                        <p>En una sorprendente vuelta de eventos, Sasuke Uchiha ha sido considerado el mejor futbolista de Konoha, gracias a su increíble habilidad en el campo. Desde su debut, ha cautivado a todos con sus jugadas rápidas y precisas, deslumbrando tanto a aliados como a rivales. Sin embargo, no faltan quienes se cuestionan: ¿es realmente el mejor o está usando algún tipo de técnica secreta para ganar? Mientras algunos lo aclaman como el próximo ídolo de la liga, otros se preguntan si su éxito es solo una jugada de su clan. ¿Qué opinas tú?</p>
+                    </section>
+                    <footer>
+                        <p>Autor: <a href="mailto: ing.josejimenezper@gmail.com">José Alfredo Jiménez Pérez</a></p>
+                        <a href="noticia3-completa.html">Leer más...</a>
+                    </footer>
+                </article>
+
+                <!--Articulo 2-Deporte-->
+                <article class="articulo-deporte" style="background-color: #DAF7A6;">
+                    <header>
+                        <h4>Noticia 2: ¿Será suficiente la defensa de Naruto para detener a Sasuke en la final de los exámenes Chûnin?</h4>
+                        <time dametime="2025-03-02">02 de marzo 2025</time>
+                    </header>
+                    <section>
+                        <figure>
+                            <img src="../../../img/naruto.jpg" width="100" alt="Naruto" >
+                            <figcaption>Sasuke en el partido de hoy</figcaption>
+                        </figure>
+                            <p>La gran final de los exámenes Chûnin está a punto de comenzar, y todos los ojos están puestos en el enfrentamiento entre Naruto Uzumaki y Sasuke Uchiha. Después de semanas de intensos combates, Naruto ha demostrado su increíble resistencia y habilidades mejoradas, pero muchos se preguntan si será suficiente para contrarrestar la velocidad y la precisión letales de Sasuke.</p>
+
+                            <p>Los rumores dicen que Naruto ha estado entrenando su defensa de manera intensiva, buscando nuevas tácticas para anticiparse a los ataques de su antiguo amigo. Sin embargo, la gran pregunta es: ¿su fuerza interior será suficiente para frenar la habilidad superior de Sasuke? Los expertos están divididos. Algunos dicen que la feroz determinación de Naruto es su mayor ventaja, mientras que otros apuntan a que Sasuke, con su Sharingan y agilidad, podría tener la ventaja definitiva.</p>
+                            
+                            </p>El destino de Konoha está en juego. ¿Veremos a Naruto derribar a Sasuke en esta épica final, o será el Uchiha quien se lleve la victoria? Solo el tiempo lo dirá.</p>
+                    </section>
+                    <footer>
+                        <p>Autor: <a href="mailto: ing.josejimenezper@gmail.com">José Alfredo Jiménez Pérez</a></p>
+                        <a href="noticia3-completa.html">Leer más...</a>
+                    </footer>
+                </article>
+            </div>
+
+            <!--Seccion Cultura-->
+            <div class="contenedor-cultura">
+                <!--Titulo Seccion Cultura-->
+                <header>
+                    <h3>Cultura</h3>
+                </header>
+                <!--Articulo 1-Cultura-->
+                <article class="articulo-cultura" style="background-color:#28b463;">
+                    <header>
+                        <h4>Noticia 1: Tacticas Icha Icha ¿Libro de Cultura?</h4>
+                        <time dametime="2024-12-31">31 de diciembre 2024</time>
+                    </header>
+                    <section>
+                        <figure>
+                            <img src="../../../img/jiraiya.jpg" width="100" alt="Jiraiya" >
+                            <figcaption>Jiraiya<br>Autor del Libro</figcaption>
+                        </figure>
+                        <p>En el mundo ninja, el famoso libro "Icha Icha" de Jiraiya ha generado más de una discusión. Mientras que algunos lo ven como una obra literaria irreverente y parte de la cultura popular de Konoha, otros lo consideran simplemente una lectura provocadora sin mayor valor. ¿Es "Icha Icha" una muestra de la libertad de expresión dentro de la literatura ninja o una serie de tácticas cuestionables con fines comerciales?</p>
+
+                        <p>Lo cierto es que los libros de la saga, en sus versiones más atrevidas, se han convertido en un éxito dentro de la juventud de Konoha, particularmente entre los shinobis. A pesar de las críticas, muchos los leen en secreto, encontrando en sus páginas una mezcla de humor y contenido subido de tono. Algunos expertos literarios creen que, más allá de su controversial temática, "Icha Icha" ofrece un vistazo a las complejidades emocionales de los personajes, mientras que otros simplemente lo rechazan como una distracción innecesaria.</p>                            
+                        <p>¿Qué opinas tú? ¿Es "Icha Icha" solo un libro de entretenimiento o tiene un lugar legítimo en la cultura literaria de los ninjas?</p>
+                </section>
+                    <footer>
+                        <p>Autor: <a href="mailto: ing.josejimenezper@gmail.com">José Alfredo Jiménez Pérez</a></p>
+                        <a href="noticia3-completa.html">Leer más...</a>
+                    </footer>
+                </article>
+
+                <!--Articulo 2-Deporte-->
+                <article class="articulo-deporte" style="background-color: #c39bd3;">
+                    <header>
+                        <h4>Noticia 2: Festival de los Cinco Elementos en Konoha</h4>
+                        <time dametime="2025-02-01">01 de Febrero 2025</time>
+                    </header>
+                    <section>
+                        <figure>
+                            <img src="../../../img/festival.jpg" width="100" alt="festival 2024 konoha" >
+                            <figcaption>Festival Konoha 2024</figcaption>
+                        </figure>
+                            <p>Konoha celebra su evento anual con competencias de ninjutsu, arte y tradiciones, donde los ninjas demuestran su habilidad en los cinco elementos fundamentales. ¡Un evento imperdible para todos!</p>
+                    </section>
+                    <footer>
+                        <p>Autor: <a href="mailto: ing.josejimenezper@gmail.com">José Alfredo Jiménez Pérez</a></p>
+                        <a href="noticia3-completa.html">Leer más...</a>
+                    </footer>
+                </article>
+            </div>
+            
+            <!--Seccion Tecnologia-->
+            <div class="contenedor-tecnologia">
+                <!--Titulo Seccion Tecnologia-->
+                <header>
+                    <h3>Tecnologia</h3>
+                </header>
+                <!--Articulo 1-Tecnologia-->
+                <article class="articulo-tecnologia" style="background-color:#28b463;">
+                    <header>
+                        <h4>Noticia 1: Nuevo Entrenamiento para Jóvenes Ninjas</h4>
+                        <time dametime="2025-1-31">31 de enero 2025</time>
+                    </header>
+                    <section>
+                        <figure>
+                            <img src="../../../img/sakura.jpg" width="100" alt="Sakura entrenadora ninja" >
+                            <figcaption>Sakura<br>Ninja Entrenadora Medico</figcaption>
+                        </figure>
+                        <p>Konoha lanza un programa especial de entrenamiento para ninjas novatos. El objetivo es fortalecer las habilidades de los jóvenes y prepararlos para futuras misiones, con un enfoque en técnicas de ninjutsu avanzadas y trabajo en equipo.</p>
+                    </section>
+                    <footer>
+                        <p>Autor: <a href="mailto: ing.josejimenezper@gmail.com">José Alfredo Jiménez Pérez</a></p>
+                        <a href="noticia3-completa.html">Leer más...</a>
+                    </footer>
+                </article>
+
+                <!--Articulo 2-Deporte-->
+                <article class="articulo-deporte" style="background-color: #e67e22;">
+                    <header>
+                        <h4>Noticia 2: La Academia Ninja Adopta Nuevas Tecnologías en el Entrenamiento</h4>
+                        <time dametime="2025-02-01">01 de Febrero 2025</time>
+                    </header>
+                    <section>
+                        <figure>
+                            <img src="../../../img/herramientas.jpg" width="100" alt="Herramientas Ninjas" >
+                            <figcaption>Herramientas Ninjas Actuales</figcaption>
+                        </figure>
+                            <p>La Academia Ninja de Konoha ha integrado dispositivos tecnológicos avanzados en su currículo de entrenamiento. Los estudiantes ahora utilizan simuladores de batalla virtuales para mejorar sus habilidades en combate y tácticas de equipo, reduciendo riesgos durante las prácticas.</p>
+                    </section>
+                    <footer>
+                        <p>Autor: <a href="mailto: ing.josejimenezper@gmail.com">José Alfredo Jiménez Pérez</a></p>
+                        <a href="noticia3-completa.html">Leer más...</a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+        <aside style="background-color:#f0f0f0;">
+            <h3>Aprende HTML</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Guía de HTML en MDN</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">HTML en W3Schools</a></li>
+                <li><a href="https://htmlreference.io/" target="_blank">HTML Reference</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <h3>Autores</h3>
+        <p>Jose Alfredo Jimenez Perez <br>Informática, Multimedia y Telecomunicación</p>   
+        <address>Puebla, Mexico</address>
+        <small>&copy;Derechos Reservados</small>        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!--Ejercicio 4: Página de Restaurante con Menú Interactivo
+Crea una página de restaurante que contenga:
+
+Un menú de comida con diferentes categorías (entrantes, platos principales, postres, bebidas).
+
+Cada plato debe tener un nombre, una descripción breve y un precio.
+
+Una sección de contacto con un formulario que permita a los clientes enviar sus comentarios.
+
+Usa <header>, <footer>, <section>, <article>, <nav>, <form>, <input>, <button>, <details>, y <summary>.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="contenedor-header">
+        <h1>Restaurante "Tabasqueño"</h1>
+        <nav>
+            <ul>
+                <li><a href="#contenedor-header">Inicio</a></li>
+                <li><a href="#entrantes">Entrantes</a></li>
+                <li><a href="#principales">Platos Principales</a></li>
+                <li><a href="#postres">Postres</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#caja-comentarios">Contacto</a></li>
+            </ul> 
+        </nav>
+    
+    </header>
+    <main>
+
+        <section id="contenedor-restaurante">
+            <h2>Menú</h2>
+            <!--Seccion Entrantes-->
+            <div id="entrantes" class="contenedor-entrante">
+                <!--Titulo Seccion Deportes-->
+                <details>
+                    <summary>Entrantes</summary>
+                    <article>
+                        <h3>Bruschetta</h3>
+                        <p>Pan tostado con tomate, albahaca y aceite de oliva.</p>
+                        <p>Precio: $80</p>
+                    </article>
+
+                    <article>
+                        <h3>Ensalada de Fresas</h3>
+                        <p>Pan tostado con tomate, albahaca y aceite de oliva.</p>
+                        <p>Precio: $80</p>
+                    </article>
+                </details>
+            
+            </div>
+
+            <div id="principales" class="contenedor-principale">
+                <!--Titulo Seccion Platillos Principales-->
+                <details>
+                    <summary>Platillos Principales</summary>
+                    <article>
+                        <h3>Pozole</h3>
+                        <p>Tradicional caldo mexicano hecho a base de maíz cacahuazintle, carne de cerdo o pollo, y acompañado con lechuga, rábano, orégano y limón.</p>
+                        <p>Precio: $150</p>
+                    </article>
+
+                    <article>
+                        <h3>Pizza de Mango</h3>
+                        <p>Innovadora combinación de sabores tropicales: base de queso derretido, trozos de mango dulce y un toque de chile para resaltar lo exótico.</p>
+                        <p>Precio: $200</p>
+                    </article>
+                </details>
+            
+            </div>
+
+            <div id="postres" class="contenedor-postre">
+                <!--Titulo Seccion Postres-->
+                <details>
+                    <summary>Postres</summary>
+                    <article>
+                        <h3>Arroz Con Leche</h3>
+                        <p>Dulce tradicional hecho con arroz cocido en leche, aromatizado con canela y vainilla, perfecto para consentir el paladar.</p>
+                        <p>Precio: $50</p>
+                    </article>
+
+                    <article>
+                        <h3>Flan Horneado</h3>
+                        <p>Postre cremoso de huevo y leche, con una textura suave y un caramelo dorado que se derrite en cada bocado.</p>
+                        <p>Precio: $20</p>
+                    </article>
+                </details>
+            
+            </div>
+            <div id="bebidas" class="contenedor-bebidas">
+                <!--Titulo Seccion Postres-->
+                <details>
+                    <summary>Bebidas</summary>
+                    <article>
+                        <h3>Cerveza</h3>
+                        <p>Bebida fermentada y refrescante, con un toque amargo y burbujeante, ideal para acompañar tus platillos favoritos.</p>
+                        <p>Precio: $50</p>
+                    </article>
+
+                    <article>
+                        <h3>Coca-Cola</h3>
+                        <p>Refresco clásico de sabor inconfundible, dulce y burbujeante, perfecto para cualquier ocasión.</p>
+                        <p>Precio: $30</p>
+                    </article>
+                </details>
+            
+            </div>
+        </section>
+        <div id="caja-comentarios">
+            <fieldset>
+                <legend>Comentarios</legend>
+                <form name="comentarios" method="get" action="respuestas.php">
+                    <p><label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" maxlength="25" placeholder="Ingresa nombre"></label></p>
+                    <p><label for="correo">Correo: <input type="email" name="correo" id="correo" placeholder="Correo Obligatorio"></label></p>
+                    <p><label for="comentarios">Comentarios</label></p><textarea name="comentarios" id="comentarios" cols="35" rows="6" placeholder="Ingresa comentario hasta 500 palabras" maxlength="500"></textarea> 
+                    <p><button type="submit">Enviar Comentario</button></p>      
+                </form>
+            </fieldset>
+            
+        </div>
+    </main>
+
+    <footer>
+        <h3>Autores</h3>
+        <p>Jose Alfredo Jimenez Perez <br>Informática, Multimedia y Telecomunicación</p>   
+        <address>Puebla, Mexico</address>
+        <small>&copy;Derechos Reservados</small>        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form name="form_basico" method="get" action="procesar.php">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p><label>Nombre:<input type="text" name="nombre" maxlength="20" placeholder="Inserta tu nombre"></label></p>
+                <p><label>Edad:<input pattern="[0-9]{2}" name="edad" placeholder="Inserta tu edad"></label></p>
+                <p><label>Codigo Postal: <input pattern="[0-9]{5}" name="CP" placeholder="Inserta codigo postal (5 digitos)" required></label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Cuentas</legend>
+                <p><label>Correo:<input type="email" name="correo" placeholder="Correo Obligatorio" required></label></p>
+                <p><label>Contraseña: <input type="password" name="contraseña" placeholder="password"></label></p>
+            </fieldset>
+            
+           
+            <fieldset>
+                <legend>Extras</legend>
+                <p><label for="favoritos">Personaje Favorito</label>
+                    <select name="favs">
+                        <option value="1">Naruto</option>
+                        <option value="2">Death Note</option>
+                        <option value="3">Jujutsu</option>
+                        <option value="4">Nanatus</option>
+                    </select>
+                </p>
+                <p><label>Comentarios<textarea name="comentarios" cols="25" rows="4" placeholder="Inserta tus más sinceros comentarios, son de ayuda al desarrollador" maxlength="500"></textarea></label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Género</legend>
+                <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                <label><input type="radio" name="genero" value="otro"> Otro</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Marcas de Cigarros conocidas</legend>
+                <label><input type="checkbox" name="cigarros1" value="Malboro">Malboro</label>
+                <label><input type="checkbox" name="cigarros2" value="Lucky">Lucky Strikes</label>
+                <label><input type="checkbox" name="cigarros3" value="Palmall" checked>Palmall</label>
+                <label><input type="checkbox" name="cigarros4" value="Camellos">Camellos</label>
+            </fieldset>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </section>
+</body>
+</html>

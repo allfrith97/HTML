@@ -1,0 +1,62 @@
+body{
+    background: url(img/eva.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@font-face {
+    font-family: "Dogica-Bold";
+    src: url(dogica/TTF/dogicabold.ttf);
+}
+
+@font-face {
+    font-family: "Dogica";
+    src: url(dogica/TTF/dogica.ttf);
+}
+
+#contenedor-tarjeta{  
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    background: -webkit-radial-gradient(top,ellipse,#96e839 1%,#581e71 70%);
+    margin: 5% auto;
+
+    outline: 3px dashed #96e839;
+    outline-offset: 15px;
+}
+
+figure{
+    text-align: center;
+    font: normal 8px Dogica,Verdana, sans-serif;
+}
+
+img{
+    margin: 30px auto;
+    border-radius: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+figure>figcaption{
+    font: bold 14px Dogica-bold, Verdana, sans-serif;
+    color: #96e839;
+}
+
+
+#informacion{
+    text-align: center;
+    margin: 10%;
+}
+
+
+#nombre{
+    font: bold 14px Dogica-Bold, Verdana, sans-serif;
+    
+}
+
+#profesion{
+    font: bold 8px Dogica-bold, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 20px;
+}

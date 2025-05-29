@@ -1,0 +1,151 @@
+<!--Ejercicio 2: Portafolio Personal con Proyectos
+Diseña una página de portafolio personal con las siguientes características:
+
+Un encabezado con tu nombre, foto y una breve biografía.
+
+Secciones para mostrar tus proyectos, habilidades, y logros.
+
+Cada proyecto debe estar representado con una imagen, descripción, y enlaces a detalles o repositorios (si aplica).
+
+Incluye un formulario de contacto con campos de nombre, correo electrónico y mensaje.
+
+Usa <header>, <section>, <article>, <figure>, <figcaption>, <footer>, <form>, <input>, <button>, y <nav>.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfafolio</title>
+</head>
+<body>
+    <!--Cabecera del documento-->
+    <header>
+        <h1>José Alfredo Jimenez Perez</h1>
+        <figure>    
+            <img src="../../../img/icon.png" type="image/png" width="100" alt="Foto de perfil">
+            <figcaption>Foto de Perfil</figcaption>
+        </figure>
+        <article id="descripcion">
+            <h2>¿Quién soy?</h2>
+            <p>Soy una persona apasionada por el desarrollo web, con una mente curiosa y una motivación constante por aprender y mejorar cada día. A lo largo de mi vida he explorado distintas áreas de la tecnología, lo que me ha dado una sólida base en soporte técnico, pero mi verdadera vocación la encontré en el mundo del diseño y la programación web. Disfruto construir desde cero, entender cada etiqueta, cada línea de código, y dar vida a ideas con estructuras semánticas bien pensadas.</p>
+
+            <p>Me esfuerzo por comprender a fondo cada herramienta que uso, desde el HTML más puro hasta los conceptos más complejos de desarrollo. No me conformo con lo básico: busco dominar los fundamentos para crear soluciones limpias, funcionales y escalables. Cada línea de código que escribo es un paso más hacia mi crecimiento como desarrollador.</p>
+        
+            <p>Soy autodidacta, detallista y persistente. No solo estudio para aprender, sino para transformar mi conocimiento en algo útil y significativo.</p>
+        </article>
+    </header>
+    <!--Barra navegacion-->
+    <!--Barra de Navegacion-->
+    <nav>
+      <a href="#descripcion">Mi perfil</a>|
+      <a href="#contenedor-proyectos">Proyecto</a>|
+      <a href="#contenedor-formulario">Contacto</a>|
+  </nav>
+    <!--Cuerpo del documento-->
+    <main>
+      <section id="contenedor-proyectos">
+        <h2>Proyectos</h2>
+        <fieldset>
+          <legend>Projects</legend>
+          
+        <div>
+            <table border="1">
+              <!--Primera Fila de 3 columnas-->
+              <tr>
+                <th>Proyecto 1: Portafolio</th>
+                <th>Proyecto 2: CRUD</th>
+                <th>Proyecto 3: To-do List</th>
+              </tr>
+              <!--Segunda Fila de 3 columnas-->
+              <tr>
+                <td><img src="../../Capitulo 2 HTML/Avanzados/img/portafolio.jpg" alt="Proyecto Portafolio" width="250"></img></td>
+                <td><img src="../../Capitulo 2 HTML/Avanzados/img/CRUD.jpg" alt="Proyecto Portafolio" width="250"></img></td>
+                <td><img src="../../Capitulo 2 HTML/Avanzados/img/portafolio.jpg" alt="Proyecto Portafolio" width="250"></img></td>
+              </tr>
+              <!--Tercera Fila combinada de 3 columnas-->
+              <tr>
+                <th colspan="3">Descripcion</th>
+              </tr>
+              <!--Cuarta Fila de 3 columnas-->
+              <tr>
+                <td width="250"><p>Portafolio personal enfocado en el desarrollo web, donde aplico buenas prácticas, estructura semántica y organización de contenido.</p></td>
+                <td width="250"><p>Proyecto CRUD desarrollado en HTML donde aplico operaciones básicas para gestionar información de manera sencilla.</p></td>
+                <td width="250"><p>Proyecto To-do List donde organizo tareas mediante una estructura clara y ordenada en HTML.</p></td>  
+              </tr>
+              <!--Quinta Fila de 3 columnas-->
+              <tr>
+                <td>
+                  <details>
+                    <summary>Leer más...</summary>
+                    <p>Este proyecto representa mi crecimiento como desarrollador web. Aquí aplico conceptos clave de HTML semántico, planificación estructural y una base sólida para futuras integraciones con CSS y JavaScript. Mi objetivo es construir sitios claros, accesibles y bien pensados desde el inicio.</p>
+                  </details>
+                </td>
+
+                <td>
+                  <details>
+                    <summary>Leer más...</summary>
+                    <p>Este proyecto representa una práctica fundamental en el desarrollo web: Crear, Leer, Actualizar y Eliminar datos (CRUD). Aunque está construido solo con HTML en esta fase, me permite planear una estructura clara para futuras integraciones con CSS y JavaScript, enfocándome en la organización y funcionalidad de la interfaz.</p>
+                  </details>
+                </td>
+
+                <td>
+                  <details>
+                    <summary>Leer más...</summary>
+                    <p>Este proyecto consiste en una lista de tareas que permite visualizar y organizar actividades pendientes. La estructura está basada únicamente en HTML, con énfasis en semántica, legibilidad y preparación para añadir interactividad con JavaScript. Es una base sólida para un gestor de tareas funcional y accesible.</p>
+                  </details>
+                </td>
+              </tr> 
+              
+              <!--Sexta Fila de 3 columnas combinadas-->
+              <tr>
+                <th colspan="3">Enlaces</th>
+              </tr>
+
+              <tr>
+                <td><a href="https://github.com/shreya6360/Responsive-personal_portfolio">1. Repositorio Portafolio Personal</a></td>
+                <td><a href="https://github.com/HarishVinayagamoorthy/CRUD-APP">1. Repositorio CRUD</a></td>
+                <td><a href="https://github.com/Lordwill1/todo-list">1. Repositorio To-do</a></td>
+              </tr>
+            </table>            
+        </div>
+        </fieldset>
+        
+      </section>
+
+      <section id="contenedor-formulario">
+        <h2>Contacto</h2>
+        <div id="caja-comentarios">
+          <fieldset>
+              <legend>Contac</legend>
+              <form name="comentarios" method="get" action="respuestas.php">
+                  <p><label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" maxlength="25" placeholder="Ingresa nombre"></label></p>
+                  <p><label for="correo">Correo: <input type="email" name="correo" id="correo" placeholder="Correo Obligatorio"></label></p>
+                  <p><label for="comentarios">Comentarios</label></p><textarea name="comentarios" id="comentarios" cols="35" rows="6" placeholder="Ingresa comentario hasta 500 palabras" maxlength="500"></textarea> 
+                  <p><button type="submit">Enviar Comentario</button></p>      
+              </form>
+          </fieldset>        
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Autores</h3>
+      <p>Jose Alfredo Jimenez Perez <br>Informática, Multimedia y Telecomunicación</p>   
+      <address>Puebla, Mexico</address>
+      <small>&copy;Derechos Reservados</small>        
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

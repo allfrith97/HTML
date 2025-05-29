@@ -1,0 +1,122 @@
+Perfecto, ya tengo guardado todo eso. Aquí tienes las **especificaciones detalladas** de los **10 ejercicios** (5 básicos/intermedios y 5 con dificultad universitaria), más **1 proyecto real**. Cada uno está diseñado para practicar los temas que estudiaste.
+
+---
+
+### 🧪 **Ejercicios Básico-Intermedios (1 al 5)**
+
+#### **Ejercicio 1 – Tarjeta de Presentación Personal**
+**Objetivo:** Practicar `estilos`, `clases`, `bordes`, `colores`, `texto`.
+- Crea una tarjeta centrada en la página.
+- Debe tener:
+  - Un nombre (etiqueta `h1`)
+  - Profesión (etiqueta `p`)
+  - Fondo degradado suave (gradient lineal o radial)
+  - Bordes redondeados
+  - Sombra de caja ligera
+  - Color de texto acorde al fondo
+
+#### **Ejercicio 2 – Botón Interactivo con Transición**
+**Objetivo:** Practicar `transiciones`, `colores`, `hover`, `pseudoclases`.
+- Crea un botón con los siguientes efectos:
+  - Cambio de color de fondo y texto al pasar el mouse
+  - Suavidad en el cambio (transición de 0.3s)
+  - Estilo predeterminado con borde y padding
+  - Usa `:hover` y `:active`
+
+#### **Ejercicio 3 – Lista con Filtros Visuales**
+**Objetivo:** Practicar `filtros`, `texto`, `pseudo-elementos`.
+- Lista de 3 elementos (`ul > li`)
+- Cada elemento tiene un filtro visual distinto (`blur`, `grayscale`, etc.)
+- Al pasar el mouse, el filtro se quita con una transición suave
+- Añade un pequeño icono usando `::before`
+
+#### **Ejercicio 4 – Caja con Transformación 3D**
+**Objetivo:** Practicar `transformaciones`, `bordes`, `sombras`.
+- Caja cuadrada que al pasar el mouse:
+  - Gira en Y o X con `transform: rotateY(180deg);`
+  - Cambia su sombra para dar efecto de profundidad
+  - Debe tener un color de fondo con contraste
+
+#### **Ejercicio 5 – Título con Texto Estilizado y Sombra**
+**Objetivo:** Practicar `sombra de texto`, `tipografía`, `clases`.
+- Crear un encabezado (h1) con:
+  - Fuente distinta a la predeterminada
+  - Sombra de texto múltiple (2 sombras)
+  - Color con gradiente usando `background-clip: text`
+  - Tamaño grande y centrado
+
+---
+
+### 🎓 **Ejercicios con Dificultad Universitaria (6 al 10)**
+
+#### **Ejercicio 6 – Mini Panel de Noticias**
+**Objetivo:** Practicar `clases`, `fondo`, `bordes`, `transiciones`, `transformaciones`.
+- Crear 3 tarjetas tipo “noticia” en una cuadrícula
+- Cada tarjeta:
+  - Tiene una imagen de fondo con `background-size: cover`
+  - Al pasar el mouse se eleva y hace zoom al fondo
+  - Usa `transition` y `transform`
+  - Título y texto sobrepuestos con fondo translúcido
+
+#### **Ejercicio 7 – Formulario con Validación Visual**
+**Objetivo:** Practicar `pseudoclases`, `transiciones`, `filtros`, `borde`.
+- Crea un formulario con campos: nombre, correo, contraseña
+- Al enfocar (`:focus`), el campo cambia borde y sombra
+- Si el campo está vacío, al enviar el formulario, cambia a borde rojo con sombra
+- Los campos deben tener animación de transición al cambiar estado
+
+#### **Ejercicio 8 – Galería de Imágenes con Filtros Interactivos**
+**Objetivo:** Practicar `filtros`, `hover`, `transform`, `transiciones`.
+- 6 imágenes en una cuadrícula
+- Cada imagen aplica un filtro diferente (`sepia`, `contrast`, `blur`, etc.)
+- Al pasar el mouse:
+  - Se elimina el filtro
+  - La imagen crece ligeramente (zoom)
+  - Con transición suave
+
+#### **Ejercicio 9 – Cronología Vertical con Animaciones**
+**Objetivo:** Practicar `animaciones`, `pseudo-elementos`, `bordes`, `texto`.
+- Crear una línea vertical central
+- A la izquierda y derecha hay bloques de eventos (como una biografía)
+- Cada bloque entra con animación diferente (desde izquierda o derecha)
+- Usa `@keyframes` y `position absolute/relative`
+
+#### **Ejercicio 10 – Menú de Navegación Flotante con Hover Animado**
+**Objetivo:** Practicar `pseudo-elementos`, `animaciones`, `transiciones`, `gradientes`.
+- Menú horizontal flotante con 4 opciones
+- Cada opción tiene:
+  - Efecto de hover con subrayado animado (creado con `::after`)
+  - Fondo del menú con degradado
+  - Animación inicial de aparición (fadeIn)
+
+---
+
+### 💼 **Proyecto Real – Página Portafolio Personal (Nivel Básico/Intermedio)**
+
+**Objetivo:** Aplicar todos los conceptos aprendidos de forma coherente y visualmente atractiva.
+
+**Estructura obligatoria del proyecto:**
+- **Encabezado con tu nombre y una breve descripción personal**
+  - Fondo degradado y tipografía personalizada
+  - Animación al cargar el texto
+
+- **Sección "Sobre mí"**
+  - Tarjeta con sombra, borde redondeado, fondo translúcido
+  - Texto estilizado con sombra
+
+- **Sección de habilidades**
+  - Lista con íconos e interacciones por `hover` (filtro o transformación)
+
+- **Sección de proyectos realizados**
+  - 2 tarjetas tipo galería con zoom y filtro al pasar el mouse
+
+- **Botón de contacto**
+  - Transiciones, cambio de color al pasar el mouse
+
+- **Pie de página**
+  - Fondo oscuro, texto claro
+  - Incluye tu correo o enlace ficticio
+
+---
+
+Cuando estés listo para revisar un ejercicio o el proyecto paso a paso, dime cuál, y lo vamos trabajando juntos 😎

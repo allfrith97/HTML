@@ -1,0 +1,34 @@
+body{
+   background-color: powderblue;
+}
+
+#contenedor{
+    width:300px;
+    height:300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: tomato;
+    text-align: center;
+}
+
+#boton{
+   
+    width: 200px;
+    margin-top: 40%;
+    padding: 15px 32px;
+    background-color: blueviolet;
+    color: #fff;
+    transition: background-color .03s ease-in-out 0s;
+}
+
+
+#boton:hover{
+    background-color: blue;
+}
+
+#boton:active{
+    background-color:#96e839;
+    border-color: #581e71;
+    color: black;
+}
+

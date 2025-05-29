@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Formularios en Html">
+        <meta name="keywords" content="Formularios">
+        <link rel="icon" type="image/png" href="img/icon.png" sizes="16x16">
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <section>
+            <h2>Ejemplo con elemento: Name</h2>
+            <form name="formulario" method="get" action="procesar.php">
+                <p>
+                    <label>Nombre:<input type="text" name="nombre" maxlength="4"></label>
+                </p>
+                <p>
+                    <label>Edad:<input type="number" name="edad" ></label>
+                </p>
+                <p>
+                    <label>Correo:<input type="email" name="correo"></label>
+                </p>
+                <p>
+                    <label>Telefono:<input type="tel" name="telefono"></label>
+                </p>
+                <p>
+                    <label>Sitio web:<input type="url" name="sitioweb"></label>
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+        </section>
+        <!--Ejemplo con For-->
+        <section>
+            <h2>Ejemplo con elemento: For</h2>
+            <form name="formulario" method="get" action="procesar.php">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </p>
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="text" name="edad" id="edad" value="28">
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+        </section>
+        <section>
+            <h2>Mas ejemplos de Formularios</h2>
+            <!--Ejemplo de Atributos Min y Max-->
+            <section>
+                <h3>Atributos Min y Max</h3>
+                <form name="formulario" method="get" action="procesar.php">
+                    <p>
+                        <input type="number" name="edad" min="10" max="122" value="20">
+                    </p>
+                </form>
+            </section>
+            <!--Tipo Range-->
+            <section>
+                <h3>Tipo Range</h3>
+                <form name="formulario" method="get" action="procesar.php">
+                    <input type="range" name="edad" min="4" max="69" value="8">
+                </form>
+            </section>
+            <!--Tipo Radio-->
+            <section>
+                <h3>Tipo Radio</h3>
+                <form name="formulario" method="get" action="procesar.php">
+                    <p><label>Nombre:<input type="text" name="nombre" maxlength="10"></label></p>
+                    <p><label><input type="radio" name="edad" value="8">8 años</label></p>
+                    <p><label><input type="radio" name="edad" value="4">4 años</label></p>
+                    <p><label><input type="radio" name="edad" value="69" checked>69 años</label></p>
+                    <p><label><input type="radio" name="edad" value="15">15 años</label></p>
+                    
+                </form>
+            </section>
+            <!--Tipo Checkbox-->
+            <section>
+                <h3>Tipo Checkbox</h3>
+                <form name="formulario" method="get" action="procesar.php">
+                    <p><label>Nombre:<input type="text" name="nombre" maxlength="10"></label></p>
+                    <p><label><input type="checkbox" name="edad8" value="8" checked>8 años</label></p>
+                    <p><label><input type="checkbox" name="edad4" value="4">4 años</label></p>
+                    <p><label><input type="checkbox" name="edad69" value="69" checked>69 años</label></p>
+                    <p><label><input type="checkbox" name="edad15" value="15">15 años</label></p>
+                    
+                </form>
+            </section>
+            <!--Tipo Date-->
+            <section>
+                <h3>Tipo Date</h3>
+                <form name="calendario" method="get" action="calendario.php">
+                    <input type="time" name="fecha" value="04:20">
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </form>
+            </section>
+            <!--Tipo color-->
+            <section>
+                <h3>Tipo Color</h3>
+                <form name="colores" method="get" action="colores.php">
+                    <input type="color" name="micolor" value="#99BB00">
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </form>
+            </section>
+            <!--Tipo Image-->
+            <section>
+                <h3>Tipo Image</h3>
+                <form name="botonconimagen" method="get" action="colores.php">
+                    <p><label>Name:<input type="text" name="nombre"></label></p>
+                    <p><label>Edad:<input type="text" name="edad"></label></p>
+                    <p><input type="image" src="img/enviar.png" width="100"></p>
+                </form>
+            </section>
+            <!--Elemento Button-->
+            <section>
+                <h3>Elemento Button</h3>
+                <form name="enviar" method="get"  action="enviar.php">
+                    <p><label>Name:<input type="text" name="nombre"></label></p>
+                    <p><label>Edad:<input type="text" name="edad"></label></p>
+                    <p><button type="submit">Enviar Formulario</button></p>
+                </form>
+            </section>
+            <!--Elemento TextArea-->
+            <section>
+                <h3>Elemento TextArea</h3>
+                <form name="enviar" method="get"  action="enviar.php">
+                    <p><label>Texto:<textarea name="datos" cols="100" rows="6"></textarea></label></p>
+                    <p><button type="submit">Enviar Formulario</button></p>
+                </form>
+            </section>
+            <!--Elemento Select-->
+            <section>
+                <h3>Elemento Select</h3>
+                <form name="enviar" method="get"  action="enviar.php">
+                    <p>
+                        <label for="listado">Libros:</label>
+                        <select name="libro" id="listado">
+                            <option value="1">Mamey</option>
+                            <option value="2">Coca</option>
+                            <option value="3">Jose</option>
+                            <option value="4">Alfredo</option>
+                        </select>
+                    </p>
+                    <p><button type="submit">Enviar Formulario</button></p>
+                </form>
+            </section>
+            <!--Elemento datalist-->
+            <section>
+                <h3>Elemento datalist</h3>
+                <form name="enviar" method="get"  action="enviar.php">
+                    <datalist id="datos">
+                        <option value="2214334884" label="Telefono1"></option>
+                        <option value="22252069960" label="Telefono2"></option>
+                    </datalist>
+                    <p><label>Telefono:<input type="tel" name="telefono" list="datos"></label></p>
+                    <p><button type="submit">Enviar Formulario</button></p>
+                </form>
+            </section>
+            <section>
+                <h3>Elemento progress y meter</h3>
+                <h4>Progress</h4>
+                <progress value="30" max="100">0%</progress>
+                <h4>Meter</h4>
+                <meter value="100" min="0" max="100" low="40" high="80" optimum="100">60</meter>
+            </section>
+        </section>
+    </body>
+</html>

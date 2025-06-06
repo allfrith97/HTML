@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Aplicacion de html y css en la vida real">
+    <meta name="keywords" conten="html,css,javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+
+    <script>
+    var visible=false;
+    function iniciar(){
+        var elemento=document.getElementById("menu-img");
+        elemento.addEventListener("click",mostrarMenu);
+    }
+    function mostrarMenu(){
+        var elemento=document.getElementById("menuprincipal");
+        if(!visible){
+            elemento.style.display="flex";
+            visible=true;
+        }else{
+            elemento.style.display="none";
+            visible=false;
+        }   
+    }
+    window.addEventListener("load",iniciar);
+</script>
+
+</head>
+
+<body>
+    <header id="cabeceralogo">
+        <div>
+            <h1>Este es el titulo</h1>
+        </div>
+    </header>
+    <nav id="menuicono">
+        <img src="menu (1).png" alt="" id="menu-img">
+    </nav>
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fotos.html">Fotos</a>
+                    <ul>
+                        <li><a href="familia.html">Familia</a></li>
+                        <li><a href="vacaciones.html">Vacaciones</a></li>
+                    </ul>
+                </li>
+                    
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <section id="articulosprincipales">
+                <!--Primer articulo-->
+                <article>
+                    <h1>Titulo del Primer Articulo</h1>
+                    <time datetime="2016-12-23" pubdate>
+                        <div class="numerodia">23</div>
+                        <div class="nombredia">Viernes</div>
+                    </time>
+                    <p>Este es el texto de mi primer articulo</p>
+                    <figure>
+                        <img src="../../../img/sasuke2.jpg" alt="Sasuke">
+                    </figure>
+                </article>
+                <!--Segundo articulo-->
+                <article>
+                    <h1>Titulo del Segundo Articulo</h1>
+                    <time datetime="2016-12-7" pubdate>
+                        <div class="numerodia">7</div>
+                        <div class="nombredia">Miercoles</div>
+                    </time>
+                    <p>Este es el texto de mi segundo articulo</p>
+                    <figure>
+                        <img src="../../../img/naruto2.jpg" alt="Sasuke">
+                    </figure>
+                </article>
+            </section>
+
+            <aside id="infoadicional">
+                <h1>Informacion Personal</h1>
+                <p>Cita del Articulo 1</p>
+                <p>Cita del articulo 2</p>
+            </aside>
+            <div class="recuperar"></div>
+        </div>
+    </main>
+    <footer id="pielogo">
+        <div>
+            <section  class="seccionpie">
+                <h1>Sitio Web</h1>
+                <p><a href="index.html">Inicio</a></p>
+                <p><a href="Fotos.html">Fotos</a></p>
+                <p><a href="videos.html">Videos</a></p>
+            </section>
+            <section class="seccionpie">
+                <h1>Ayuda</h1>
+                <p><a href="contacto.html">Contacto</a></p>
+            </section>
+            <section class="seccionpie">
+                <address>Toronto,Canada</address>
+                <small>&copy;Derechos Reservados 2025</small>
+            </section>
+            <div class="recuperar"></div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonio Card con Triángulo Abajo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .testimonial-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .user-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-card {
+      background: #fff;
+      padding: 20px;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: left;
+      position: relative;
+    }
+
+    .testimonial-card::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 30px; /* Ajusta esto para mover el triángulo más a la izquierda o derecha */
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 20px solid #fff;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .user-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="testimonial-container">
+    
+    <div class="testimonial-card">
+      <p class="testimonial-text">"La experiencia trabajando con Freddy fue excepcional. Su habilidad para encontrar soluciones únicas es admirable."</p>
+      <div class="user-name">Carlos Rivera</div>
+    </div>
+    <img src="https://via.placeholder.com/80" alt="Usuario" class="user-img">
+  </div>
+
+</body>
+</html>

@@ -1,2 +1,4 @@
-var minumero=11%3;
-alert(minumero);
+function mifuncion(valor){
+    alert(valor);
+}
+mifuncion(6);

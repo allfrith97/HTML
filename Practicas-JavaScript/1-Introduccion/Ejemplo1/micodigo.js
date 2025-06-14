@@ -1,4 +1,11 @@
-function mifuncion(valor){
-    alert(valor);
+var mifuncion=function(valor){
+    valor=valor*2;
+    return valor;
 }
-mifuncion(6);
+var total=2;
+
+for(var f=0;f<10;f++){
+    total=mifuncion(total);
+}
+
+alert("El total es: "+ total);

@@ -267,7 +267,7 @@ empleado.mostrarnombre();
 
 */
 
-/*Creando objetos a partir de otros objetos*/
+/*Creando objetos a partir de otros objetos
 var miObjeto={
     nombre:"Alfredo",
     edad:28,
@@ -282,4 +282,335 @@ var miObjeto={
 var empleado=Object.create(miObjeto);
 empleado.cambiarNombre('Roberto');
 empleado.mostrarDatos();
-miObjeto.mostrarDatos();
+miObjeto.mostrarDatos();*/
+
+
+/*Agregando un nuevo metodo al proyecto
+var miObjeto={
+    nombre:"Juan",
+    edad:"28",
+    mostrarnombre: function(){
+        alert(this.nombre);
+    },
+    cambairnombre: function(nombrenuevo){
+        this.nombre=nombrenuevo;
+    }
+};
+var empleado=Object.create(miObjeto);
+empleado.edad=24;
+
+miObjeto.mostraredad=function(){
+    alert(this.edad);
+}
+
+empleado.mostraredad();*/
+
+
+/*Probando la cadena de prototipos
+var miObjeto={
+    nombre:"Juan",
+    edad:"28",
+    mostrarnombre: function(){
+        alert(this.nombre);
+    },
+    cambairnombre: function(nombrenuevo){
+        this.nombre=nombrenuevo;
+    }
+};
+var empleado1=Object.create(miObjeto);
+var empleado2=Object.create(empleado1);
+var empleado3=Object.create(empleado2);
+
+empleado2.mostraredad=function(){
+    alert(this.edad);
+};
+
+empleado3.edad=22;
+
+empleado3.mostraredad();
+
+/*Creando numeros con un constructor
+var valor= new Number(5);
+alert(valor);*/
+
+/*Creando numeros a partir de una cadena de caracteres
+var valor= new Number("10");
+alert(valor+2);*/
+
+/*Creando un arrar con un constructor
+var lista=new Array(12,35,57,8);
+alert(lista);
+var lista=new Array(2);
+alert(lista);*/
+
+/*Contando la cantidad de caracteres de una cadena
+var texto="Hola Mundo";
+var mensaje="El texto tiene "+ texto.length+ " caracteres";
+alert(mensaje);*/
+
+/*Iterando sobre los caracteres de una cadena y removiendo espacios con el metodo trim()
+var texto="Hola Mundo";
+var mensaje="";
+for(var y=0;y<texto.length;y++){
+    mensaje+=texto[y]+"  ";
+}
+mensaje=mensaje.trim();
+alert(mensaje);
+
+*/
+
+/*Procesando una cadena de caracteres
+var texto="Hola Mundo";
+var mensaje="";
+var anterior="";
+
+for(var y=0;y<texto.length;y++){
+    if(mensaje!=""){
+        anterior=texto[y-1];
+        if(anterior!=" "&&texto[y]!=" "){
+            mensaje+=".";
+        }
+    }
+    mensaje+=texto[y];
+}
+alert(mensaje);*/
+
+/*Convirtiendo los caracteres de una cadena en letras mayusculas
+var texto="Hola Mundo";
+var mensaje=texto.toUpperCase();
+alert (mensaje);*/
+
+/*Copiando un grupo de caracteres
+
+var texto="Hola Mundo";
+var mensaje=texto.substring(5,7);
+alert (mensaje);*/
+
+/*Obteniendo palabras de una cadena
+var texto="Hola Mundo";
+var mensaje=texto.split(" ")
+alert (mensaje[0]+"/"+mensaje[1]);*/
+
+/*Buscando texto al comienzo de la cadena
+var texto="Hola Mundo";
+if(texto.startsWith("m")){
+    alert ("El texto comienza con 'Ho'");
+}
+*/
+
+/*Buscando texto dentro de otro texto
+var texto="Hola Mundo";
+if(texto.includes("l")){
+    alert ("El texto incluye la letra 'L'");
+}*/
+
+/*Encontrando la ubicacion de un texto dentro de una cadena de caracteres
+var texto="Hola Mundo";
+var indice=texto.indexOf("Mundo");
+alert("La palabra comienza en el indice "+ indice);*/
+
+/*Reemplazando textos en una cadena de caracteres
+var texto="Hola Mundo";
+var indice=texto.replace("Mundo","Planeta");
+alert(indice);*/
+
+/*Obteniendo la cantidad de valores en el array
+var lista=[12,24,35,67];
+alert(lista.length)*/
+
+/*Iterando obre el array
+var lista=[12,5,80,34];
+var total=0;
+for(var y=0;y<lista.length;y++){
+    total+=lista[y];
+}
+alert("El total es: " + total);*/
+
+/*Creando un array con los valores de otro array
+
+var lista=[12,5,80,34];
+var listanueva=lista.slice(1,3);
+alert(listanueva);*/
+
+/*Filtrando los valores de un array
+var lista=[12,5,80,34];
+var listanueva=lista.filter (function(){
+    if (valor<=50){
+        return true;
+    }else{
+        return false;
+    }
+});
+alert(listanueva);*/
+
+/*Devolviendo una condicion para filtrar los elementos
+var lista=[12,5,80,20,100,34];
+var listanueva=lista.filter (function(valor){
+    return valor<=50;
+});
+alert(listanueva);*/
+
+/*Evaluando los valores de un array
+var lista=[120,500,800,200,1000,340];
+var valido=lista.every(function(valor){
+    return valor<=100;
+});
+if(valido){
+    alert("Los valores no son mayores que 100");
+}else{
+    alert("Los valores son mas de 100 unidades");
+}*/
+/*Creando una cadena de caracteres con los valores de un array
+var lista=[12,5,80,34];
+var mensaje=lista.join("*");
+alert(mensaje);*/
+
+/*Obteniendo el indice de un valor en el array
+
+var lista=[12,5,80,34,5];
+var posicion=lista.indexOf(5);
+alert("El valor " +lista[posicion]+" se encuenra en el indice: "+ posicion);*/
+
+/*Buscando multiples valores en un array
+var lista=[12,5,80,34,5,5];
+var buscar=5;
+var ultimo=0;
+var contador=0;
+while(ultimo>=0){
+    var ultimo=lista.indexOf(5,ultimo);
+    if(ultimo!=-1){
+        ultimo++;
+        contador++;
+    }
+}
+alert("Hay un total de " +contador+" numeros: "+ buscar);
+
+*/
+
+/*Agregando multiples valores a un array 
+var lista=[12,5,80,34];
+lista.push(100,200,300,400);
+alert(lista);*/
+
+
+/*Concatenando 2 arrays
+
+var lista=[12,5,80,34];
+var lista2=[10,20,30];
+var listanueva=lista.concat(lista2);
+alert(listanueva);
+*/
+
+/*Eliminando valores de un array
+var lista=[12,5,80,34];
+lista.shift();
+alert(lista);*/
+
+/*Removiendo valores de un valor
+var lista=[12,5,80,34];
+var removidos=lista.splice(0,4);
+alert("Valores restantes: "+lista);
+alert("Valores removidos: "+removidos);*/
+
+/*Agregando valores a un array en una posicion especifica
+var lista=[12,5,80,34];
+lista.splice(1,0,24,25,26);
+alert(lista);*/
+
+/*Invirtiendo el orden de los valores de un array
+var lista=[12,5,80,34];
+lista.reverse();
+alert(lista);*/
+
+/*Ordenando los valores en orden alfabetico
+var lista=[12,5,80,34];
+lista.sort();
+alert(lista);*/
+
+/*Ordenando los valores en orden numeric0
+var lista=[13,12,5,80,34];
+lista.sort(function(valor1,valor2){
+    return valor1-valor2;
+});
+alert(lista);*/
+
+/*Procesando los valores y almacenando los resultados
+var lista=[13,12,5,80,34];
+var listanueva=lista.map(function(valor){
+    return valor*2;
+});
+alert(listanueva);*/
+
+/*Creando un objeto date
+var fecha=new Date();
+alert(fecha);*/
+
+/*Creando un objeto date a partir de un texto
+var fecha=new Date("March 03 2023");
+alert(fecha);
+*/
+
+/*Creando ub objeto Date a partir de los componentes de una fecha
+var fecha=new Date(2023,2,3, 8,20,35,0);
+alert(fecha);*/
+
+/*Leyendo los componentes de una fecha
+var hoy= new Date();
+var ano=hoy.getFullYear();
+alert("El año es "+ ano);*/
+
+/*Leyendo el mes
+var hoy=new Date();
+var ano=hoy.getFullYear();
+var mes=hoy.getMonth()+1;
+var dia=hoy.getDate();
+
+alert(ano+"-"+mes+"-"+dia);
+*/
+
+/*Incrementando una fecha
+var hoy=new Date();
+alert(hoy);
+hoy.setDate(hoy.getDate()+15);
+alert(hoy);*/
+
+/*Calculando un intervalo en segundos
+var hoy=new Date(2023,2,3);
+var futuro=new Date(2025,5,20);
+
+var intervalo=futuro-hoy;
+alert(intervalo);
+*/
+
+/*Calculando un intervalo en dias
+var hoy=new Date(2023,2,3);
+var futuro=new Date(2025,5,20);
+var intervalo=futuro-hoy;
+var dias=intervalo/(24*60*60*1000);
+alert("Han pasado: "+ dias+" dias");
+*/
+
+
+/*Comparando dos fechas
+var hoy=new Date(2023,2,3,10,35);
+var futuro=new Date(2023,2,3,12,35);
+hoy.setHours(0,0,0);
+futuro.setHours(0,0,0);
+if(futuro.getTime()==hoy.getTime()){
+    alert("Las fechas son iguales")
+}else{
+    alert("Las fechas son diferentes");
+}*/
+
+/*Ejecutando Operaciones aritmeticas con el objeto MATH
+var cuadrado=Math.sqrt(4);
+var elevado=Math.pow(2,2);
+var maximo=Math.max(cuadrado,elevado);
+alert("El valor mas grande es "+maximo);
+*/
+
+/*Obteniendo un valor al azar
+var numeroazar=Math.random()*(11-1)+1;
+var valor=Math.floor(numeroazar);
+alert ("El numero es: "+valor);
+*/
